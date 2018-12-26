@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- materia icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="assets/css/abstyle.css">
+  <title>Abogados Colegiados</title>
+
+  <style>
+    .container-card-landing {
+      margin: 0px 7%;
+    }
+
+    .logo-img-landing {
+      width: 50%;
+    }
+
+    .background-gradient {
+      background: #6936af;
+      background: linear-gradient(to right, #235bbc 0%, #4d3ab8 80%);
+    }
+
+    nav {
+      box-shadow: none !important;
+      background: none;
+    }
+
+    main {
+      width: 100%;
+      top: 0 !important
+    }
+
+    header {
+      position: absolute !important
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .logo-circle {
+      width: 30vw;
+      background: #e9e9e9;
+      border-radius: 50%;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+      margin-right: 10%;
+    }
+
+    .img-logo-circle {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+      .logo-circle {
+        display: none;
+      }
+
+      .logo-container {
+        height: 100vh;
+      }
+
+      .card-landing {
+        margin: 0 auto;
+        width: 100%;
+        max-height: 70vh;
+        overflow-y: auto
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="hide-on-small-only">
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="left">
+          <li><a href="sass.html" class="tooltipped btn waves-effect blue darken-3" data-position="bottom" data-tooltip="¡Encuentra a los mejores abogados!">Registrate</a></li>
+          <li><a href="sass.html" class="tooltipped grey-text text-darken-4" data-position="bottom" data-tooltip="¡Registrate y recibe grandes beneceficios!">¿Eres
+              abogado?</a></li>
+          <li><a href="sass.html" class="grey-text text-darken-4">Contactanos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col s12 m6 grey lighten-4 hide-on-small-only">
+        <div class="valign-wrapper logo-container">
+          <img src="assets/logo.png" class="logo-img-landing reveal" style="margin: 0 auto">
+        </div>
+      </div>
+      <div id="search" class="col s12 m6 valign-wrapper blue darken-3" style="min-height:100vh">
+        <div class="container-card-landing reveal">
+          <div class="valign-wrapper">
+            <div class="logo-circle">
+              <img src="assets/logo.png" class="img-logo-circle">
+            </div>
+            <h1 class="large-text bold-text white-text ">
+              Abogados Colegiados
+            </h1>
+          </div>
+          <div class="card-panel card-landing">
+
+            <p class="medium-text">Abogados titulados, confiables, a tu servicio y cerca de ti</p>
+
+            <div class="input-field">
+              <select>
+                <option value="" disabled selected>Alcaldía o municipio</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Alcaldía o municipio</label>
+            </div>
+            <div class="input-field ">
+              <select>
+                <option value="" disabled selected>Materia o area</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Materia o area</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Abogados colegiados</h5>
+          <p class="grey-text text-lighten-2">Abogados titulados, confiables, a tu servicio y cerca de ti.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-2" href="#!">Contactanos</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Facebook</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Twitter</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Intagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    ScrollReveal().reveal('.reveal');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems, {});
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+    });
+  </script>
+</body>
+
+</html>
