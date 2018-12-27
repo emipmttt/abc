@@ -1,0 +1,72 @@
+@import 'https://fonts.googleapis.com/css?family=Signika+Negative:400,700';
+@import 'invtsBasics.css';
+
+:root {
+  --primary: #1565C0;
+}
+
+* {
+  font-family: 'Signika Negative';
+}
+
+body {
+  color: #333 !important;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+/* color select */
+
+.dropdown-content.select-dropdown span {
+  color: var(--primary)
+}
+
+/* footer */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* inputs */
+
+
+/* label color */
+.input-field label {
+  color: #1565C0;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+  color: #1565C0 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}

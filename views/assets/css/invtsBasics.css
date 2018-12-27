@@ -23,7 +23,8 @@
 
 .card-panel,
 .card,
-.modal {
+.modal,
+.hoverable {
   border-radius: 1rem;
 }
 
