@@ -33,21 +33,13 @@
       background: none;
     }
 
-    main {
-      width: 100%;
-      top: 0 !important
-    }
-
-    header {
-      position: absolute !important
-    }
-
     .row {
       margin: 0;
     }
 
     .logo-circle {
-      width: 30vw;
+      width: 80px;
+      height: 80px;
       background: #e9e9e9;
       border-radius: 50%;
       box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
@@ -55,7 +47,8 @@
     }
 
     .img-logo-circle {
-      width: 100%;
+      width: 80px;
+      height: 80px;
     }
 
     .btn-action-large {
@@ -68,6 +61,13 @@
     }
 
     @media only screen and (min-width: 600px) {
+
+      .title {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+      }
 
       .feature {
         margin: 10px 0;
@@ -94,20 +94,13 @@
 </head>
 
 <body>
-  <header>
-    <nav class="hide-on-small-only">
-      <div class="nav-wrapper">
-        <ul id="nav-mobile" class="left">
-          <li><a href="sass.html" class="tooltipped btn waves-effect blue darken-2" data-position="bottom" data-tooltip="¡Encuentra a los mejores abogados!">Registrate</a></li>
-          <li><a href="sass.html" class="tooltipped grey-text text-darken-4" data-position="bottom" data-tooltip="¡Registrate y recibe grandes beneceficios!">¿Eres
-              abogado?</a></li>
-        </ul>
-      </div>
-    </nav>
-
-  </header>
-
   <main>
+    <div class="title hide-on-small-only large-text" style="margin-left:.7rem">
+      <h1>
+        <span class="blue-text darken-2">Abogados</span>
+        <span class="white-text">Colegiados</span>
+      </h1>
+    </div>
     <div class="row">
       <div class="col s12 m6 blue darken-2 hide-on-small-only" style="padding: 0;">
         <div style="border-radius: 0 0 100rem 0 !important" class="grey lighten-4">
@@ -122,9 +115,11 @@
             <div class="logo-circle">
               <img src="assets/logo.png" class="img-logo-circle">
             </div>
-            <h1 class="large-text bold-text white-text ">
-              Abogados Colegiados
-            </h1>
+            <div style="margin:0 auto">
+              <h1 class="large-text bold-text white-text hide-on-med-and-up">
+                Abogados Colegiados
+              </h1>
+            </div>
           </div>
           <div class="card-panel card-landing">
 
@@ -141,7 +136,7 @@
             </div>
             <div class="input-field ">
               <select>
-                <option value="" disabled selected>Materia o area</option>
+                <option value="" disabled selected>Materia o área</option>
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
                 <option value="3">Option 3</option>
@@ -149,10 +144,12 @@
               <label>Materia o area</label>
             </div>
 
-            <a class="btn waves-effect blue darken-2 right">
-              <i class="material-icons left">search</i>
-              Buscar
-            </a>
+            <div class="right-align">
+              <a class="btn waves-effect blue darken-2 ">
+                <i class="material-icons left">search</i>
+                Buscar
+              </a>
+            </div>
 
           </div>
 
@@ -167,32 +164,41 @@
         <div class="card-panel grey lighten-4" style="margin: 0">
           <div class="row grey-text">
             <div class="col s12 m4 center hoverable feature">
-              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 140px">person</i><br>
-              <p class="grey-text text-darken-2">
-                ¿Contrataste abogado en Abogados colegiados?
+              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 140px">how_to_reg</i><br>
+              <p>
+                ¿Contrataste abogado en Abogados Colegiados?
                 <br>
                 <br>
-                <a href="" class="btn waves-effect blue darken-2">Registrate</a>
+                <a href="" class="btn waves-effect blue darken-2">
+                  <i class="material-icons left">person_add</i>
+                  Registrate
+                </a>
               </p>
             </div>
             <div class="col s12 m4 center hoverable feature">
-              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 140px">book</i><br>
-              <p class="grey-text text-darken-2">
-                ¿Ya contrataste abogado en Abogados colegidos, estás registrado y requieres una segunda opinion o
+              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 140px">local_library</i><br>
+              <p>
+                ¿Ya contrataste abogado en Abogados Colegiados, estás registrado y requieres una segunda opinion o
                 revisión de tu expediente de forma gratuita?
                 <br>
                 <br>
-                <a href="" class="btn waves-effect blue darken-2">Contáctanos</a>
+                <a href="" class="btn waves-effect blue darken-2">
+                  <i class="material-icons left">phone</i>
+                  Contáctanos
+                </a>
               </p>
             </div>
             <div class="col s12 m4 center hoverable feature">
-              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 140px">assignment_turned_in</i><br>
-              <p class="grey-text text-darken-2">
-                Si no contrataste abogado en Abogados colegiados y requieres una segunda opinión o
+              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 140px">contact_phone</i><br>
+              <p>
+                Si no contrataste abogado en Abogados Colegiados y requieres una segunda opinión o
                 revisión de tu expediente ¡Obtenla a bajo costo!
                 <br>
                 <br>
-                <a href="" class="btn waves-effect blue darken-2">Contáctanos</a>
+                <a href="" class="btn waves-effect blue darken-2">
+                  <i class="material-icons left">phone</i>
+                  Contáctanos
+                </a>
               </p>
             </div>
           </div>
@@ -203,7 +209,7 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m8">
-            <h1 class="white-text large-text">Abogado, si quieres integrarte a Abogados colegiados</h1>
+            <h1 class="white-text large-text">Abogado, si quieres integrarte a Abogados Colegiados</h1>
           </div>
           <div class="col s12 m4 valign-wrapper">
             <div class="btn btn-large white blue-text text-darken-3 btn-action-large reveal">
@@ -221,19 +227,19 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Abogados colegiados</h5>
-          <p class="grey-text text-lighten-2">Abogados titulados, confiables, a tu servicio y cerca de ti.</p>
+          <h5 class="white-text">Abogados Colegiados</h5>
+          <p class="grey-text text-lighten-2">La comunidad en México de abogados titulados, confiables, a tu servicio y
+            cerca de ti.</p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-2" href="#!">Contactanos</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Contáctanos</a></li>
             <li><a class="grey-text text-lighten-2" href="#!">Facebook</a></li>
             <li><a class="grey-text text-lighten-2" href="#!">Twitter</a></li>
-            <li><a class="grey-text text-lighten-2" href="#!">Intagram</a></li>
             <br>
-            <li><a class="grey-text text-lighten-2" href="#!">Términos y condiciones para <b>usuarios</b></a></li>
-            <li><a class="grey-text text-lighten-2" href="#!">Términos y condiciones para <b>abogados</b></a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Términos y condiciones</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Aviso de privacidad</a></li>
 
           </ul>
         </div>
