@@ -58,6 +58,15 @@
       width: 100%;
     }
 
+    .btn-action-large {
+      margin: 0 auto;
+      margin-top: 5vh;
+      font-size: 25px;
+      padding: 10px 40px;
+      height: auto;
+      margin-bottom: 20px
+    }
+
     @media only screen and (min-width: 600px) {
 
       .feature {
@@ -89,7 +98,7 @@
     <nav class="hide-on-small-only">
       <div class="nav-wrapper">
         <ul id="nav-mobile" class="left">
-          <li><a href="sass.html" class="tooltipped btn waves-effect blue darken-3" data-position="bottom" data-tooltip="¡Encuentra a los mejores abogados!">Registrate</a></li>
+          <li><a href="sass.html" class="tooltipped btn waves-effect blue darken-2" data-position="bottom" data-tooltip="¡Encuentra a los mejores abogados!">Registrate</a></li>
           <li><a href="sass.html" class="tooltipped grey-text text-darken-4" data-position="bottom" data-tooltip="¡Registrate y recibe grandes beneceficios!">¿Eres
               abogado?</a></li>
           <li><a href="sass.html" class="grey-text text-darken-4">Contactanos</a></li>
@@ -101,12 +110,14 @@
 
   <main>
     <div class="row">
-      <div class="col s12 m6 grey lighten-4 hide-on-small-only">
-        <div class="valign-wrapper logo-container">
-          <img src="assets/logo.png" class="logo-img-landing reveal" style="margin: 0 auto">
+      <div class="col s12 m6 blue darken-2 hide-on-small-only" style="padding: 0;">
+        <div style="border-radius: 0 0 100rem 0 !important" class="grey lighten-4">
+          <div class="valign-wrapper logo-container">
+            <img src="assets/logo.png" class="logo-img-landing reveal" style="margin: 0 auto">
+          </div>
         </div>
       </div>
-      <div id="search" class="col s12 m6 valign-wrapper blue darken-3" style="min-height:100vh">
+      <div id="search" class="col s12 m6 valign-wrapper blue darken-2" style="min-height:100vh">
         <div class="container-card-landing reveal">
           <div class="valign-wrapper">
             <div class="logo-circle">
@@ -139,44 +150,67 @@
               <label>Materia o area</label>
             </div>
 
+            <a class="btn waves-effect blue darken-2 right">
+              <i class="material-icons left">search</i>
+              Buscar
+            </a>
+
           </div>
 
         </div>
       </div>
     </div>
 
-    <div class="grey darken-3">
+    <div class="blue darken-2">
 
       <div class="container">
-        <div class="row grey-text">
-          <div class="col s12 m4 center hoverable feature">
-            <i class="material-icons" style="font-size: 200px">person</i><br>
-            <p>
-              ¿Contrataste abogado en Abogados colegiados?
-              <br>
-              <br>
-              <a href="" class="btn waves-effect blue">Registrate</a>
-            </p>
+        <br>
+        <div class="card-panel grey lighten-4" style="margin: 0">
+          <div class="row grey-text">
+            <div class="col s12 m4 center hoverable feature">
+              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 200px">person</i><br>
+              <p class="grey-text text-darken-2">
+                ¿Contrataste abogado en Abogados colegiados?
+                <br>
+                <br>
+                <a href="" class="btn waves-effect blue darken-2">Registrate</a>
+              </p>
+            </div>
+            <div class="col s12 m4 center hoverable feature">
+              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 200px">book</i><br>
+              <p class="grey-text text-darken-2">
+                ¿Ya contrataste abogado en Abogados colegidos, estás registrado y requieres una segunda opinion o
+                revisión de tu expediente de forma gratuita?
+                <br>
+                <br>
+                <a href="" class="btn waves-effect blue darken-2">Contáctanos</a>
+              </p>
+            </div>
+            <div class="col s12 m4 center hoverable feature">
+              <i class="material-icons blue-text text-darken-2 reveal" style="font-size: 200px">assignment_turned_in</i><br>
+              <p class="grey-text text-darken-2">
+                Si no contrataste abogado en Abogados colegiados y requieres una segunda opinión o
+                revisión de tu expediente ¡Obtenla a bajo costo!
+                <br>
+                <br>
+                <a href="" class="btn waves-effect blue darken-2">Contáctanos</a>
+              </p>
+            </div>
           </div>
-          <div class="col s12 m4 center hoverable feature">
-            <i class="material-icons" style="font-size: 200px">book</i><br>
-            <p>
-              ¿Ya contrataste abogado en Abogados colegidos, estás registrado y requieres una segunda opinion o
-              revisión de tu expediente de forma gratuita?
-              <br>
-              <br>
-              <a href="" class="btn waves-effect blue">Contáctanos</a>
-            </p>
+        </div>
+      </div>
+    </div>
+    <div class="blue darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m8">
+            <h1 class="white-text large-text">Abogado, si quieres integrarte a Abogados colegiados</h1>
           </div>
-          <div class="col s12 m4 center hoverable feature">
-            <i class="material-icons" style="font-size: 200px">assignment_turned_in</i><br>
-            <p>
-              Si no contrataste abogado en Abogados colegiados y requieres una segunda opinión o
-              revisión de tu expediente ¡Obtenla a bajo costo!
-              <br>
-              <br>
-              <a href="" class="btn waves-effect blue">Contáctanos</a>
-            </p>
+          <div class="col s12 m4 valign-wrapper">
+            <div class="btn btn-large white blue-text text-darken-3 btn-action-large reveal">
+              <i class="material-icons blue-text  text-darken-3 large-text">person_add</i>
+              Registrate
+            </div>
           </div>
         </div>
       </div>
@@ -198,6 +232,10 @@
             <li><a class="grey-text text-lighten-2" href="#!">Facebook</a></li>
             <li><a class="grey-text text-lighten-2" href="#!">Twitter</a></li>
             <li><a class="grey-text text-lighten-2" href="#!">Intagram</a></li>
+            <br>
+            <li><a class="grey-text text-lighten-2" href="#!">Términos y condiciones para <b>usuarios</b></a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Términos y condiciones para <b>abogados</b></a></li>
+
           </ul>
         </div>
       </div>
