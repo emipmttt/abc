@@ -11,15 +11,14 @@
 }
 
 .normal-text {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
 }
 
 .small-text {
   font-size: .7rem !important;
 }
 
-
-/*materialize*/
+/* border radius materialize*/
 
 .card-panel,
 .card,
@@ -31,4 +30,64 @@
 .btn,
 .btn-flat {
   border-radius: .6rem;
+}
+
+
+/* rows materialize */
+
+.no-margin-y {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* label focus color materialize */
+.input-field input:focus+label,
+.input-field textarea:focus+label {
+  color: var(--primary) !important;
+}
+
+/* label underline focus color materialize */
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid var(--primary) !important;
+  box-shadow: 0 1px 0 0 var(--primary) !important;
+}
+
+/* icon prefix focus color materialize */
+.input-field .prefix.active {
+  color: var(--primary) !important;
+}
+
+/* checkbox materialize */
+[type="checkbox"]:checked+span:not(.lever):after {
+  border: var(--primary) !important;
+  background-color: var(--primary) !important;
+}
+
+.container-2 {
+  margin: 20px 10%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container-2 {
+    margin: 10px 3%;
+  }
+}
+
+.circle-icon-container {
+  border-radius: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.circle-icon-container.left {
+  margin-right: 20px;
+}
+
+/* input field materialize */
+
+.input-field {
+  margin: 6px 0;
 }

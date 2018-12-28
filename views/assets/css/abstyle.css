@@ -2,7 +2,7 @@
 @import 'invtsBasics.css';
 
 :root {
-  --primary: #1565C0 !important;
+  --primary: #00acc1 !important;
 }
 
 * {
@@ -12,6 +12,7 @@
 body,
 p {
   color: #333 !important;
+  font-size: 1.1rem
 }
 
 
@@ -37,18 +38,7 @@ main {
   flex: 1 0 auto;
 }
 
-/* label focus color */
-.input-field input[type=text]:focus+label {
-  color: var(--rpimary) !important;
-}
-
-/* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid var(--rpimary) !important;
-  box-shadow: 0 1px 0 0 var(--rpimary) !important;
-}
-
-/* icon prefix focus color */
-.input-field .prefix.active {
-  color: var(--rpimary) !important;
+/* links */
+a {
+  color: var(--primary)
 }
