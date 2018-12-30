@@ -142,26 +142,34 @@
         components: {
             Footer
         },
-        data(){
+        data() {
             return {
-                selectedArea : '',
-                selectedLocation : '',
-                locations : ['ÁLVARO OBREGÓN', 'AZCAPOTZALCO', 'BENITO JUÁREZ', 'COYOACÁN',
-                            'CUAJIMALPA DE MORELOS', 'CUAUHTÉMOC', 'GUSTAVO A. MADERO', 'IZTACALCO', 'IZTAPALAPA',
-                            'MAGDALENA CONTRERAS', 'MIGUEL HIDALGO', 'MILPA ALTA', 'TLAHUAC', 'TLALPAN', 'VENUSTIANO CARRANZA',
-                            'XOCHIMILCO', 'ACOLMAN', 'ALMOLOYA DE JUÁREZ', 'ATENCO', 'ATIZAPÁN DE ZARAGOZA', 'CHALCO',
-                            'CHIMALHUACÁN', 'CHICONCUAC', 'COACALCO DE BERRIOZÁBAL', 'CUAUTITLÁN', 'CUATITLÁN IZCALLI',
-                            'ECATEPEC', 'HUIXQUILUCAN', 'IXTAPALUCA', 'LA PAZ', 'METEPEC', 'NAUCALPAN', 'NEZAHUALCÓYOTL',
-                            'NICOLÁS ROMERO', 'TECÁMAC', 'TEXCOCO', 'TLALNEPANTLA DE BAZ', 'TOLUCA', 'TULTEPEC', 'TULTITLÁN',
-                            'VALLE DE CHALCO'],
-                areas : ['DERECHO FAMILIAR', 'DERECHO CIVIL', 'DERECHO MERCANTIL', 'DERECHO PENAL', 'DERECHO LABORAL', 'DERECHO ADMINISTRATIVO',
-                        'DERECHO ADUANERO', 'DERECHO FISCAL', 'DERECHO INTERNACIONAL', 'DERECHO AGRARIO', 'AMPAROS', 'NO SÉ QUÉ MATERIA ES MI PROBLEMA']
+                selectedArea: '',
+                selectedLocation: '',
+                locations: ['ÁLVARO OBREGÓN', 'AZCAPOTZALCO', 'BENITO JUÁREZ', 'COYOACÁN',
+                    'CUAJIMALPA DE MORELOS', 'CUAUHTÉMOC', 'GUSTAVO A. MADERO', 'IZTACALCO', 'IZTAPALAPA',
+                    'MAGDALENA CONTRERAS', 'MIGUEL HIDALGO', 'MILPA ALTA', 'TLAHUAC', 'TLALPAN',
+                    'VENUSTIANO CARRANZA',
+                    'XOCHIMILCO', 'ACOLMAN', 'ALMOLOYA DE JUÁREZ', 'ATENCO', 'ATIZAPÁN DE ZARAGOZA', 'CHALCO',
+                    'CHIMALHUACÁN', 'CHICONCUAC', 'COACALCO DE BERRIOZÁBAL', 'CUAUTITLÁN', 'CUATITLÁN IZCALLI',
+                    'ECATEPEC', 'HUIXQUILUCAN', 'IXTAPALUCA', 'LA PAZ', 'METEPEC', 'NAUCALPAN', 'NEZAHUALCÓYOTL',
+                    'NICOLÁS ROMERO', 'TECÁMAC', 'TEXCOCO', 'TLALNEPANTLA DE BAZ', 'TOLUCA', 'TULTEPEC',
+                    'TULTITLÁN',
+                    'VALLE DE CHALCO'
+                ],
+                areas: ['DERECHO FAMILIAR', 'DERECHO CIVIL', 'DERECHO MERCANTIL', 'DERECHO PENAL', 'DERECHO LABORAL',
+                    'DERECHO ADMINISTRATIVO',
+                    'DERECHO ADUANERO', 'DERECHO FISCAL', 'DERECHO INTERNACIONAL', 'DERECHO AGRARIO', 'AMPAROS',
+                    'NO SÉ QUÉ MATERIA ES MI PROBLEMA'
+                ]
             }
         },
-        methods : {
-            send(){
-                if(this.selectedArea == '' || this.selectedLocation == ''){
-                    M.toast({html : 'Asegurate de elegir una locación y un área'})
+        methods: {
+            send() {
+                if (this.selectedArea == '' || this.selectedLocation == '') {
+                    M.toast({
+                        html: 'Asegurate de elegir una locación y un área'
+                    })
                 } else {
                     console.log(this.selectedLocation)
                     console.log(this.selectedArea)

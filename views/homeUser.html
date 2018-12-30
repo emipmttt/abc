@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- materia icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="assets/css/abstyle.css">
+  <title>Abogados Colegiados</title>
+
+  <style>
+    :root {
+      --width-sidenav: 240px
+    }
+
+    header,
+    main,
+    footer {
+      padding-left: var(--width-sidenav);
+    }
+
+    .sidenav {
+      width: var(--width-sidenav)
+    }
+
+    @media only screen and (max-width : 992px) {
+
+      header,
+      main,
+      footer {
+        padding-left: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="hide-on-large-only">
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue darken-1">
+          <a href="#!" class="brand-logo large-text">Abogados Colegiados</a>
+          <ul class="left">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <aside>
+    <ul id="slide-out" class="sidenav sidenav-fixed white">
+      <li><a class="sidenav-close"><i class="material-icons blue-text text-darken-1 ">home</i> inicio</a></li>
+      <li><a class="sidenav-close"><i class="material-icons blue-text text-darken-1 ">search</i> Busqueda</a></li>
+      <li><a class="sidenav-close"><i class="material-icons blue-text text-darken-1 ">star</i> Mis reseñas</a></li>
+      <li><a class="sidenav-close"><i class="material-icons blue-text text-darken-1 ">settings</i> Configuración</a></li>
+    </ul>
+  </aside>
+
+  <main class="grey lighten-4"></main>
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Abogados colegiados</h5>
+          <p class="grey-text text-lighten-2">Abogados titulados, confiables, a tu servicio y cerca de ti.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-2" href="#!">Contactanos</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Facebook</a></li>
+            <li><a class="grey-text text-lighten-2" href="#!">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    ScrollReveal().reveal('.reveal');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems, {});
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+    });
+  </script>
+</body>
+
+</html>
